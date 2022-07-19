@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 70em;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color:seagreen;
+}
+
+p {
+    font-size: 14px;
+    color: rgb(139, 137, 137);
+    padding: 25px 0;
+}
+
+#active {
+    color: seagreen;
+}
+
+.ellipse {
+    background-color: rgba(46, 139, 86, 0.059);
+    position: absolute;
+    top: -55px;
+    left: -55px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links > * {
+    padding: 0 1em;
+}
+
+.nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    display: none;
+    padding: 2em;
+    box-shadow: 2px 2px 5px 5px #00000020;
+    transition: all .5s ease-in;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.show {
+    width: 50%;
+    display: block;
+}
+
+.nav-menu ul > * {
+    padding: 10px 0;
+}
+
+.search-bar {
+    display: flex;
+    box-shadow: 2px 2px 5px 5px #00000009;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 1em;
+    border: 0;
+    outline: none;
+}
+
+.search-bar button {
+    border: 0;
+    padding: 0 15px; 
+    background-color: seagreen;
+    color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+header .container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    padding: 50px 0;
+}
+
+header.hero-section .hero-img {
+    flex: 1;
+    animation: hero-animation 2.2s infinite;
+}
+
+@keyframes hero-animation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+header .hero-text {
+    flex: 1;
+}
+
+header button {
+    background-color: seagreen;
+    color: #fff;
+    border: 0;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 2.7em;
+    padding: 0;
+    margin: 0;
+}
+
+span {
+    color:seagreen;
+    font-style: italic;
+}
+
+section.what-we-do {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.what-we-do h2 {
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+section.what-we-do .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section.what-we-do h4 {
+    color: rgb(139, 137, 137);
+    font-weight: 200;
+}
+
+section.what-we-do i {
+    color: seagreen;
+    padding-bottom: 20px;
+}
+
+section.what-we-do .row-element {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    width: 270px;
+}
+
+section.about .container {
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+section.about h1 {
+    font-size: 2em;
+}
+
+section.about img {
+    width: 60%;
+}
+
+section.about .about-text {
+    flex: 1;
+}
+
+.learn-more {
+    color: seagreen;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+section.features .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.features  img {
+    width: 50%;
+} 
+
+section.features h1 {
+    font-size: 2em;
+}
+
+section.features ul li {
+    color: rgb(139, 137, 137);
+    margin: 20px;
+}
+
+section.features ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: disc;
+}
+
+section.features ul li::marker {
+    color: seagreen;
+    font-size: 2em;
+}
+
+section.newsletter {
+    background-color: seagreen;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+section.newsletter form {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+section.newsletter form button {
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    border: 0;
+    cursor: pointer
+}
+
+section.newsletter form input {
+    border: 0;
+    width: 50%;
+    outline: none;
+    text-indent: 10px;
+}
+
+section.blog .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+section.blog article {
+    width: 30%;
+    padding: 1em;
+    transition: all .2s ease-in-out;
+}
+
+section.blog article:hover > h3 {
+    color: seagreen;
+}
+
+section.blog a {
+    color: seagreen;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    padding: 10px 0;
+}
+
+footer .social-links > * {
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    section.blog .container {
+        flex-direction: column;
+    }
+
+    section.blog article {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header .hero-text {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    header.hero-section .hero-img {
+        width: 100%;
+    }
+
+    section.about .container {
+        flex-direction: column;
+    }
+
+    section.about img {
+        width: 100%;
+    }
+
+    section.what-we-do .row-element {
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        text-align: left;
+    }
+}
+
+@media (max-width: 890px) {
+    section.features  .container{
+        flex-direction: column-reverse;
+    }
+
+    section.features img {
+        width: 100%;
+    }
+}

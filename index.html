@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <title>Base website template</title>
+</head>
+<body>
+    <div class="ellipse"></div>
+    <nav>
+        <div class="container">
+            <h1 class="logo">Base</h1>
+            <ul class="nav-links">
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" placeholder="search for anything...">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <button class="hamburger-menu">
+                <i class="fas fa-bars fa-3x"></i>
+            </button>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#" id="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <div class="hero-text">
+                <h1>Get <span>Connected</span> with a community that cares</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae expedita incidunt nobis quia ex quae. Nemo odit vero, nostrum magnam consequuntur tempore.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="hero-img">
+                <img src="images/hero-img.svg" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section class="what-we-do">
+        <div class="container">
+            <h2>What we do</h2>
+            <div class="row">
+                <div class="row-element">
+                    <i class="fas fa-globe fa-3x"></i>
+                    <h4>We help you connect with the right people</h4>
+                </div>
+                <div class="row-element">
+                    <i class="fas fa-book fa-3x"></i>
+                    <h4>One-on-One councelling with world leading experts</h4>
+                </div>
+                <div class="row-element">
+                    <i class="fas fa-phone fa-3x"></i>
+                    <h4>Support available 24/7 when you need one</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <img src="images/about-img.svg" alt="">
+            <div class="about-text">
+                <h1>We are <span>passoinate</span> about your growth</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim nam ad porro obcaecati numquam error ab explicabo.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div>
+                <h1>This is what we offer you</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. I </li>
+                </ul>
+            </div>
+            <img src="images/features-img.svg" alt="">
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h1>Subscribe to our newsletter</h1>
+            <form>
+                <input type="email" placeholder="Join our newsletter">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section class="blog" id="blog">
+        <div class="container">
+            <article>
+                <img src="images/blog1.png" alt="">
+                <h3>How to get the most of base</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat pariatur beatae vero saepe voluptatibus illo sequi nihil quos. Molestiae, illum?</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <img src="images/blog2.png" alt="">
+                <h3>How to get the most of base</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat pariatur beatae vero saepe voluptatibus illo sequi nihil quos. Molestiae, illum?</p>
+                <a href="#">Read More</a>
+            </article>
+            <article>
+                <img src="images/blog3.png" alt="">
+                <h3>How to get the most of base</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat pariatur beatae vero saepe voluptatibus illo sequi nihil quos. Molestiae, illum?</p>
+                <a href="#">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>copyright &copy; 2022</p>
+            <div class="social-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navMenu = document.querySelector(".nav-menu")
+
+        hamburgerMenu.addEventListener("click", () => {
+            navMenu.classList.toggle("show")
+        })
+    </script>
+</body>
+</html>
